@@ -32,6 +32,43 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09
 .footer{text-align:center;margin-top:32px;font:10px system-ui,sans-serif;letter-spacing:.25em;color:#81736c}
 @media(max-width:480px){.shell{padding:44px 15px 28px}.brand-area{padding-top:28px}.brand-area:before{inset:0 1% -8px}.moon{width:215px;height:215px;top:-60px}.social{width:55px;height:55px}.social i{font-size:23px}.socials{gap:9px}.extra{padding:28px 20px}.extra h2{font-size:14px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Ornate gothic social frames — CSS only, no extra assets */
+.socials{gap:17px;margin:33px auto 40px}
+.social{
+ width:72px;height:76px;position:relative;isolation:isolate;overflow:visible;
+ display:grid;place-items:center;flex:0 0 auto;
+ color:#dfc8a7;text-decoration:none;
+ border:1px solid #967758;
+ background:linear-gradient(145deg,#4b3530 0%,#211a1d 22%,#0a090c 66%,#342021 100%);
+ clip-path:polygon(0 13px,13px 0,calc(100% - 13px) 0,100% 13px,100% calc(100% - 13px),calc(100% - 13px) 100%,13px 100%,0 calc(100% - 13px));
+ box-shadow:inset 0 0 0 3px #100e11,inset 0 0 0 4px #8e7053, inset 0 0 22px #000;
+ transition:transform .2s ease,color .2s ease,filter .2s ease;
+}
+.social:before{
+ content:"";position:absolute;inset:7px;z-index:-1;
+ border:1px solid #8f715a8c;
+ background:radial-gradient(circle at 50% 36%,#7b2a2b33,transparent 75%);
+ clip-path:polygon(0 9px,9px 0,calc(100% - 9px) 0,100% 9px,100% calc(100% - 9px),calc(100% - 9px) 100%,9px 100%,0 calc(100% - 9px));
+}
+.social:after{
+ content:"✦";position:absolute;bottom:3px;left:50%;transform:translateX(-50%);
+ color:#bd8865;font-size:9px;line-height:1;
+}
+.social i{font-size:27px;line-height:1;filter:drop-shadow(0 2px 4px #000);transform:translateY(-3px)}
+.social:hover,.social:focus-visible{
+ transform:translateY(-5px);color:#fff1d9;
+ filter:drop-shadow(0 0 12px #a52f3855);
+ background:linear-gradient(145deg,#603335,#261619 50%,#140d11);
+ outline:2px solid #bda17b;outline-offset:4px;
+}
+@media(max-width:480px){
+ .socials{gap:10px}
+ .social{width:57px;height:63px}
+ .social i{font-size:23px}
+ .social:after{font-size:8px}
+}
+
 </style>
 </head>
 <body>
