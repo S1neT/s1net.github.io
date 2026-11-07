@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a090b">
+<meta name="description" content="S1NET — стримы, соцсети и ссылки.">
+<title>S1NET — Dark Fantasy</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--gold:#b29b79;--line:#55483d;--ink:#0b0a0c}
+*{box-sizing:border-box}html{min-height:100%}body{min-height:100svh;margin:0;background:#09090b;color:#e4dccc;font-family:Georgia,'Times New Roman',serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 19%,#78242a55 0 8%,transparent 29%),radial-gradient(ellipse at 50% 36%,#35303a55,transparent 52%),linear-gradient(160deg,#0a0a0d,#17151a 54%,#070709);z-index:-2}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.17;background:repeating-linear-gradient(110deg,transparent 0 7px,#9d8a7d12 8px 9px);z-index:-1}
+.shell{max-width:700px;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:76px 18px 52px}
+.moon{position:absolute;top:-95px;left:50%;transform:translateX(-50%);width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 38% 38%,#8e3d40,#4a141c 64%,#160b10 75%);box-shadow:0 0 90px #70252a44;opacity:.65;z-index:-1}
+.brand-area{position:relative;text-align:center;padding:64px 0 34px}.eyebrow{font:11px system-ui,sans-serif;letter-spacing:.45em;color:#968578;text-transform:uppercase}.brand{font-size:clamp(4.5rem,16vw,8rem);line-height:1;letter-spacing:.09em;margin:17px 0 10px;font-weight:700;color:#e0d4bd;text-shadow:0 3px 0 #302720,0 10px 35px #000}
+.rule{height:1px;max-width:390px;margin:24px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);position:relative}.rule:after{content:"◆";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#171318;padding:0 12px;color:var(--gold);font-size:11px}
+.tagline{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#aa9484}
+.socials{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin:24px auto 40px}
+.social{width:64px;height:64px;display:grid;place-items:center;text-decoration:none;color:#d8c6ad;border:1px solid #5d4a41;background:linear-gradient(145deg,#211c20e8,#100e11e8);clip-path:polygon(10px 0,90% 0,100% 10px,100% 90%,90% 100%,10px 100%,0 90%,0 10%);transition:background .2s,color .2s,transform .2s}
+.social i{font-size:25px}.social:hover,.social:focus-visible{background:#4b2228;color:#fff;transform:translateY(-3px);outline:1px solid #9b7770;outline-offset:3px}
+.extra{padding:28px 26px 30px;text-align:center;background:linear-gradient(135deg,#1c191cdb,#0f0e11eb);border:1px solid #51443e;box-shadow:inset 0 0 0 5px #0b0a0b,0 16px 55px #0006}
+.extra h2{font-size:1rem;text-transform:uppercase;letter-spacing:.24em;color:#c7b08d;margin-bottom:14px}.extra p{font:14px/1.8 system-ui,sans-serif;color:#a99f98;margin:0}
+.footer{text-align:center;margin-top:40px;font:10px system-ui,sans-serif;letter-spacing:.3em;color:#766e69}
+@media(max-width:420px){.shell{padding-top:45px}.brand-area{padding-top:48px}.social{width:55px;height:55px}.socials{gap:10px}.extra{padding:24px 18px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="container shell mx-auto">
+ <header class="brand-area"><div class="moon" aria-hidden="true"></div><div class="eyebrow">Beyond the darkness</div><h1 class="brand">S1NET</h1><div class="rule" aria-hidden="true"></div><p class="tagline">Streamer · Dark Fantasy</p></header>
+ <nav class="socials" aria-label="Социальные сети">
+ <!-- ЗАМЕНИТЕ адреса href на свои профили. Чтобы убрать иконку, удалите одну строку <a>. -->
+ <a class="social" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer" aria-label="Twitch" title="Twitch"><i class="bi bi-twitch" aria-hidden="true"></i></a>
+ <a class="social" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+ <a class="social" href="https://discord.com/" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="Discord"><i class="bi bi-discord" aria-hidden="true"></i></a>
+ <a class="social" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+ <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+ </nav>
+ <section class="extra" aria-label="Дополнительная информация"><h2>За гранью тьмы</h2><p>Здесь можно разместить объявление, описание стрима, новые ссылки или что-то ещё. Этот блок растёт вместе с содержимым.</p></section>
+ <footer class="footer">S1NET · EST. IN DARKNESS</footer>
+</main>
+</body></html>
