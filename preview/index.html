@@ -128,6 +128,31 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09
 .footer-top i{font-size:17px;vertical-align:middle}
 @media(max-width:480px){.footer{margin-top:35px}.footer-content{justify-content:center;text-align:center;column-gap:16px;row-gap:10px}.footer-copy{flex-basis:100%;order:3}.footer-top{order:2}}
 
+
+/* Gothic reliquary frame for the chronicles card */
+.extra{
+ position:relative;isolation:isolate;overflow:visible;
+ border:1px solid #9b7957;
+ background:linear-gradient(145deg,#221b1eeb,#100e12f5 48%,#1b1317ef);
+ box-shadow:0 15px 35px #0008,inset 0 0 0 4px #100d10,inset 0 0 0 5px #75583e,inset 0 0 28px #000b;
+ clip-path:polygon(0 18px,18px 0,calc(100% - 18px) 0,100% 18px,100% calc(100% - 18px),calc(100% - 18px) 100%,18px 100%,0 calc(100% - 18px));
+ padding:40px 34px 38px;
+}
+.extra:before{
+ content:"";position:absolute;inset:11px;z-index:-1;pointer-events:none;
+ border:1px solid #98714f99;
+ clip-path:polygon(0 12px,12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px));
+ background:radial-gradient(ellipse at 50% 0%,#8b4b3930,transparent 62%);
+}
+.extra:after{
+ content:"✥";position:absolute;top:8px;left:50%;transform:translateX(-50%);
+ color:#b99469;font-size:18px;line-height:1;text-shadow:0 0 12px #bd6e4a66;pointer-events:none;
+}
+.extra h2{position:relative;color:#d9b88b;text-shadow:0 1px 8px #000;letter-spacing:.2em}
+.extra h2:after{content:"◆  ─────  ✦  ─────  ◆";display:block;margin:16px auto 0;color:#947252;font-size:10px;letter-spacing:.12em;opacity:.85}
+.extra p{position:relative;color:#bdb0a7}
+@media(max-width:480px){.extra{padding:39px 20px 29px}.extra h2{letter-spacing:.12em}.extra h2:after{font-size:8px}}
+
 </style>
 </head>
 <body>
