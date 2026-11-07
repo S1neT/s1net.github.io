@@ -115,6 +115,19 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09
  .social:hover i,.social:focus-visible i{transform:translateY(-3px)}
 }
 
+
+/* Compact, conventional site footer */
+.footer{width:100%;max-width:620px;align-self:center;margin:48px auto 0;color:#9d9287;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:12px;letter-spacing:normal;text-align:left}
+.footer-divider{height:1px;background:linear-gradient(90deg,transparent,#846b51 20%,#a58a68 50%,#846b51 80%,transparent);position:relative;margin-bottom:23px}
+.footer-divider span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#111013;padding:0 12px;color:#bda17c;font-size:12px}
+.footer-content{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.footer-brand{font-family:'UnifrakturCook',Georgia,serif;color:#cbb18e;font-size:23px;line-height:1}
+.footer-copy{color:#9f968e}
+.footer-top{color:#c4a784;text-decoration:none;white-space:nowrap;transition:color .2s}
+.footer-top:hover,.footer-top:focus-visible{color:#fff0d4;text-decoration:underline;text-underline-offset:4px}
+.footer-top i{font-size:17px;vertical-align:middle}
+@media(max-width:480px){.footer{margin-top:35px}.footer-content{justify-content:center;text-align:center;column-gap:16px;row-gap:10px}.footer-copy{flex-basis:100%;order:3}.footer-top{order:2}}
+
 </style>
 </head>
 <body>
@@ -130,6 +143,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09
  <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
  </nav>
  <section class="extra" aria-label="Дополнительная информация"><h2>Хроники странника</h2><p>Место для твоих объявлений, новых ссылок и всего, что появится позже.</p></section>
- <footer class="footer">s1net · EST. IN DARKNESS</footer>
+ <footer class="footer" role="contentinfo"><div class="footer-divider" aria-hidden="true"><span>✦</span></div><div class="footer-content"><span class="footer-brand">s1net</span><span class="footer-copy">© <span id="footer-year">2026</span> s1net. Все права защищены.</span><a class="footer-top" href="#" aria-label="Наверх">Наверх <i class="bi bi-arrow-up-short" aria-hidden="true"></i></a></div></footer>
 </main>
+<script>document.getElementById("footer-year").textContent=new Date().getFullYear();</script>
 </body></html>
