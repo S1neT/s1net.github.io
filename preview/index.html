@@ -13,13 +13,13 @@
 <style>
 :root{color-scheme:dark;--gold:#bca17c;--muted:#8d8075;--blood:#742b32}
 *{box-sizing:border-box}html{min-height:100%}body{min-height:100svh;margin:0;background:#07080a;color:#e3d9c9;font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 53% 38% at 50% 26%,#762c3440,transparent 78%),linear-gradient(90deg,#030405d9,transparent 28%,transparent 72%,#030405d9),linear-gradient(180deg,#090a0d,#17131a 56%,#070709);z-index:-4}
-.scene{background-image:linear-gradient(90deg,#050506c9,transparent 22%,#080709aa 50%,transparent 78%,#050506c9),linear-gradient(180deg,#08070922,#08070955),url("./s1net-background.webp");background-position:center;background-size:cover;background-repeat:no-repeat;position:fixed;inset:0;z-index:-3;pointer-events:none;overflow:hidden;opacity:1}.scene svg{width:100%;height:100%;display:block}.vignette{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 54% 60% at 50% 47%,transparent 22%,#060607a3 90%),linear-gradient(180deg,#05050666,transparent 32%,#050506e8 100%)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09090b;z-index:-4}
+.scene{background-image:linear-gradient(90deg,#05050644,transparent 25%,#08070945 50%,transparent 75%,#05050644),linear-gradient(180deg,#08070911,#08070944),url("./s1net-background.webp");background-position:center;background-size:cover;background-repeat:no-repeat;position:fixed;inset:0;z-index:-3;pointer-events:none;overflow:hidden;opacity:1}.scene svg{width:100%;height:100%;display:block}.vignette{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 65% 75% at 50% 50%,transparent 30%,#06060770 100%),linear-gradient(180deg,#05050622,transparent 40%,#05050677 100%)}
 .shell{max-width:720px;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:64px 22px 34px}
-.brand-area{position:relative;text-align:center;padding:80px 0 22px;isolation:isolate}
-.brand-area:before{content:"";position:absolute;inset:0 8% -9px;border:1px solid #8b74534d;border-bottom:0;border-radius:48% 48% 0 0 / 32% 32% 0 0;box-shadow:inset 0 0 0 7px #08080955,inset 0 0 0 8px #8b74532b;z-index:-1}
-.brand-area:after{content:"✧";position:absolute;top:24px;left:50%;transform:translateX(-50%);font-size:23px;color:#ae856b;text-shadow:0 0 24px #b23b42}
-.moon{position:absolute;top:-86px;left:50%;transform:translateX(-50%);width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 36% 32%,#a34e4a,#6c272e 47%,#301118 76%);box-shadow:0 0 35px #8d30384a,0 0 120px #7a292b55;opacity:.62;z-index:-2}
+.brand-area{position:relative;text-align:center;padding:34px 0 22px;isolation:isolate}
+
+
+
 .brand{font-family:'UnifrakturCook',Georgia,serif;font-size:clamp(5.2rem,17vw,9rem);font-variant:normal;text-transform:none;line-height:1;letter-spacing:.015em;margin:15px 0 10px;font-weight:700;color:#e1d1b5;text-shadow:0 2px 0 #40342d,0 5px 0 #171315,0 14px 30px #000,0 0 65px #a0444544}
 .rule{height:1px;max-width:370px;margin:29px auto 9px;background:linear-gradient(90deg,transparent,#a38b68 30%,#e0bd86 50%,#a38b68 70%,transparent);position:relative}.rule:after{content:"◆";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#181316;padding:0 13px;color:#c2a17a;font-size:10px}
 .socials{display:flex;justify-content:center;flex-wrap:wrap;gap:13px;margin:29px auto 35px;max-width:100%}
@@ -30,14 +30,14 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:rad
 .extra h2{font-size:16px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:#cdb28a;margin:0 0 16px}.extra h2:after{content:"";display:block;height:1px;width:95px;margin:15px auto 0;background:linear-gradient(90deg,transparent,#8e6b53,transparent)}
 .extra p{font:14px/1.85 system-ui,sans-serif;color:#b4a79c;margin:0}
 .footer{text-align:center;margin-top:32px;font:10px system-ui,sans-serif;letter-spacing:.25em;color:#81736c}
-@media(max-width:480px){.shell{padding:44px 15px 28px}.brand-area{padding-top:67px}.brand-area:before{inset:0 1% -8px}.moon{width:215px;height:215px;top:-60px}.social{width:55px;height:55px}.social i{font-size:23px}.socials{gap:9px}.extra{padding:28px 20px}.extra h2{font-size:14px}}
+@media(max-width:480px){.shell{padding:44px 15px 28px}.brand-area{padding-top:28px}.brand-area:before{inset:0 1% -8px}.moon{width:215px;height:215px;top:-60px}.social{width:55px;height:55px}.social i{font-size:23px}.socials{gap:9px}.extra{padding:28px 20px}.extra h2{font-size:14px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <div class="scene" aria-hidden="true"></div><div class="vignette" aria-hidden="true"></div>
 <main class="container shell mx-auto">
- <header class="brand-area"><div class="moon" aria-hidden="true"></div><h1 class="brand">s1net</h1><div class="rule" aria-hidden="true"></div></header>
+ <header class="brand-area"><h1 class="brand">s1net</h1><div class="rule" aria-hidden="true"></div></header>
  <nav class="socials" aria-label="Социальные сети">
  <!-- ЗАМЕНИТЕ адреса href на свои профили. Чтобы убрать иконку, удалите одну строку <a>. -->
  <a class="social" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer" aria-label="Twitch" title="Twitch"><i class="bi bi-twitch" aria-hidden="true"></i></a>
