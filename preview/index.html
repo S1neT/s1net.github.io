@@ -85,7 +85,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09
  transition:color .3s ease,transform .32s ease;
 }
 .social:hover,.social:focus-visible{
- transform:translateY(-6px) scale(1.055);
+ transform:scale(1.075);
  filter:drop-shadow(0 8px 13px #000b) drop-shadow(0 0 11px #a3333866);
  color:#fff1d8;
  background:linear-gradient(145deg,#583638 0%,#24181d 50%,#38191e 100%);
@@ -97,13 +97,13 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;background:#09
  box-shadow:inset 0 0 14px #a82f352e;
 }
 .social:hover i,.social:focus-visible i{
- transform:translateY(-5px) scale(1.12);
+ transform:scale(1.12);
  filter:drop-shadow(0 0 8px #d19a7766);
 }
 .social:hover:after,.social:focus-visible:after{
  color:#efbc84;transform:translateX(-50%) scale(1.3);
 }
-.social:active{transform:translateY(-1px) scale(.97);transition-duration:.1s}
+.social:active{transform:scale(.97);transition-duration:.1s}
 @media(hover:none){
  .social:hover{transform:none;filter:none}
  .social:hover i{transform:translateY(-3px);filter:drop-shadow(0 2px 4px #000)}
